@@ -1,141 +1,157 @@
 <!DOCTYPE html>
-<html  data-theme="cupcake">
+<html data-theme="cupcake">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link tailwind and daisy -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- link tailwind and daisy -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font wasome -->
-    <script src="https://kit.fontawesome.com/413bcc3637.js" crossorigin="anonymous"></script>
+  <!-- font wasome -->
+  <script src="https://kit.fontawesome.com/413bcc3637.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="config.js">
-    <title>B10-Minara</title>
+  <link rel="stylesheet" href="config.js">
+  <title>B10-Minara</title>
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
+
 <body class=" border-black border-4 m-3">
-    <header class="shadow-sm pt-5 pb-7">
-        <!-- navbar -->
-         <nav class=" navbar lg:ml-56">
+  <header class="shadow-sm pt-5 pb-7">
+    <!-- navbar -->
+    <nav class=" navbar lg:ml-56">
 
-                <div class="relative">
-                    <!-- icon from font awsome -->
-                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-full p-2 bg-green-300 -mr-3"></i>
+      <div class="relative">
+        <!-- icon from font awsome -->
+        <i class="fa-solid fa-arrow-right -rotate-45 rounded-full p-2 bg-green-300 -mr-3"></i>
 
-                  <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
-                </div>
-             
-               <!-- menu items in navabar -->
-                <div class="navbar-center hidden lg:flex ">
-                    <li class="list-none px-6 font-bold">Home</li>
-                    <li  class="list-none px-6">Service</li>
-                    <li  class="list-none px-6">Portfolio</li>
-                    <li  class="list-none px-6">Blogs</li>
-                    <li  class="list-none px-6">Contact us</li>
-                </div>
-               
-                <div class="max-sm:hidden relative ">
-                  <i class="fa-solid fa-magnifying-glass bg-gray-100 p-2 rounded-full mr-5 text-gray-500"></i>
-                  <i class="fa-solid fa-cart-shopping  bg-gray-100 p-2 rounded-full mr-5 text-gray-500"></i>
-              
-               <button class="pr-12 pl-5 py-3 rounded-3xl bg-green-300 font-bold">Book Consult</button>
-                  <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black text-white  p-1  -ml-9"></i>
-                </div>
+        <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
+      </div>
 
-                 <!-- DROP DOWN BUTTON -->
-                 <div class="dropdown ml-28">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      
-                    <li class="list-none px-6 font-bold">Home</li>
-                    <li  class="list-none px-6">Service</li>
-                    <li  class="list-none px-6">Portfolio</li>
-                    <li  class="list-none px-6">Blogs</li>
-                    <li  class="list-none px-6">Contact us</li>
-                    </ul>
-                  </div>
-             
+      <!-- menu items in navabar -->
+      <div class="navbar-center hidden lg:flex ">
+        <li class="list-none px-6 font-bold">Home</li>
+        <li class="list-none px-6">Service</li>
+        <li class="list-none px-6">Portfolio</li>
+        <li class="list-none px-6">Blogs</li>
+        <li class="list-none px-6">Contact us</li>
+      </div>
 
-         </nav>
+      <div class="max-sm:hidden relative ">
+        <i class="fa-solid fa-magnifying-glass bg-gray-100 p-2 rounded-full mr-5 text-gray-500"></i>
+        <i class="fa-solid fa-cart-shopping  bg-gray-100 p-2 rounded-full mr-5 text-gray-500"></i>
+
+        <button class="pr-12 pl-5 py-3 rounded-3xl bg-green-300 font-bold">Book Consult</button>
+        <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black text-white  p-1  -ml-9"></i>
+      </div>
+
+      <!-- DROP DOWN BUTTON -->
+      <div class="dropdown ml-28">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+
+          <li class="list-none px-6 font-bold">Home</li>
+          <li class="list-none px-6">Service</li>
+          <li class="list-none px-6">Portfolio</li>
+          <li class="list-none px-6">Blogs</li>
+          <li class="list-none px-6">Contact us</li>
+        </ul>
+      </div>
 
 
-         <!-- banner part -->
-
-       <section class="grid place-items-center text-center mt-4">
-   
+    </nav>
 
 
+    <!-- banner part -->
+
+    <section class="grid place-items-center text-center mt-4">
+
+
+
+      <div>
+        <img src="images/banner.png" alt="">
+      </div>
+
+
+      <!-- text -->
+
+      <div class="lg:w-[800px]">
+        <h1 class="text-3xl font-bold mt-4 mb-6 lg:text-5xl">A barn house of this design has a striking appearance</h1>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal accents, and large windows that flood the space with natural light.</p>
+        <div class="relative mt-6">
+          <button class="pr-12 pl-5 py-3 rounded-3xl bg-green-300 font-bold">Book Consult</button>
+          <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black text-white  p-1  -ml-9"></i>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+
+
+  </header>
+  <!-- main section -->
+  <main>
+    <section>
+      <div>
+        <div>
+          <button class="btn">About us</button>
+          <h1>We design thoughtful, liveable spaces</h1>
+          <p>The barn house captivates with its blend of rustic charm and
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
           <div>
-            <img src="images/banner.png" alt="">
+            <img src="" alt="">
+            <div>
+              <h2>Commercial</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
           </div>
-
-
-          <!-- text -->
-
-          <div class="lg:w-[800px]">
-            <h1 class="text-3xl font-bold mt-4 mb-6 lg:text-5xl">A barn house of this design has a striking appearance</h1>
-            <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-           <div class="relative mt-6">
-            <button class="pr-12 pl-5 py-3 rounded-3xl bg-green-300 font-bold">Book Consult</button>
-            <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-black text-white  p-1  -ml-9"></i>
-           </div>
-
+          <div>
+            <img src="" alt="">
+            <div>
+              <h2>Residential</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
           </div>
+        </div>
+        <div></div>
+      </div>
 
-
-
-       </section>
-          
-
-
-    </header>
-    <!-- main section -->
-     <main>
-      <section>
-        
-      </section>
-      
+    </section>
 
 
 
 
-     </main>
+
+  </main>
 
 
 
-    <!-- footer section -->
-     <footer>
+  <!-- footer section -->
+  <footer>
 
-     </footer>
+  </footer>
 
-    
+
 </body>
+
 </html>
