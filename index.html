@@ -29,7 +29,7 @@
 </head>
 
 <body class=" border-black border-4 m-3">
-  <header class="shadow-sm pt-5 pb-7">
+  <header class="shadow-sm pt-5 pb-7 bg-white">
     <!-- navbar -->
     <nav class=" navbar lg:ml-56">
 
@@ -111,29 +111,35 @@
   </header>
   <!-- main section -->
   <main>
-    <section>
-      <div>
-        <div>
-          <button class="btn">About us</button>
-          <h1>We design thoughtful, liveable spaces</h1>
-          <p>The barn house captivates with its blend of rustic charm and
+    <section class="bg-[rgb(30, 30, 30)]">
+      <div class="grid grid-cols-1 items-center mt-14 lg:flex lg:justify-evenly">
+        <div class="w-auto lg:w-[450px]">
+          <div class="relative">
+            <i class="fa-solid fa-arrow-right -mr-4"></i>
+          <button class="btn px-8">About us</button>
+          </div>
+          <h1 class="text-2xl mt-4 mb-6 lg:text-4xl font-bold">We design thoughtful, liveable spaces</h1>
+          <p class="mb-7">The barn house captivates with its blend of rustic charm and
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
-          <div>
-            <img src="" alt="">
+            <!-- card -->
+          <div class="flex bg-white shadow-2xl p-6 mb-7 -mt-5 rounded-2xl gap-7">
+            <img src="images/commercial.png" alt="">
             <div>
-              <h2>Commercial</h2>
+              <h1 class="font-bold">Commercial</h1>
               <p>The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
           </div>
-          <div>
-            <img src="" alt="">
+          <div class="flex bg-white shadow-2xl p-6 rounded-2xl gap-7">
+            <img src="images/residential.png" alt="">
             <div>
-              <h2>Residential</h2>
+              <h1 class="font-bold">Residential</h1>
               <p>The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
           </div>
         </div>
-        <div></div>
+        <div class="w-auto mt-5 lg:w-[500px]">
+          <img src="images/Rectangle.png" alt="">
+        </div>
       </div>
 
     </section>
